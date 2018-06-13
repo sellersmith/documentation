@@ -21,21 +21,39 @@
 
 ### UIInput
 
-It's `<input type="text" />` in html, take a look at the input box right below the Font Size label.
-
-![UIInput](../../.gitbook/assets/screen-shot-2018-06-11-at-2.39.40-pm.png)
+![UI Input](../../.gitbook/assets/screen-shot-2018-06-13-at-3.45.46-pm.png)
 
   
 **Code related**
 
 {% code-tabs %}
-{% code-tabs-item title="pfapp/common/fields/styling/font.js" %}
+{% code-tabs-item title="pfapp/projects/playground/views/index.js" %}
 ```jsx
-<UIInput
-    bind="style.fontSize"
-    format={_.addPixel}
-    options={[8, 9, 10, 11, 12, 14, 18, 24, 30, 36, 48, 60, 72, 96]}
-/>
+import UIApp from 'components/ui/providers/UIApp'
+import UI from 'components'
+
+export default class extends Component {
+   render() {
+      return (
+         <UIApp>
+            <Wrapper>
+               <h3>I'm UI Input</h3>
+               <UI.Input
+                  placeholder="Type something..."
+                  onChange={value => {
+                     console.log('new value', value)
+                  }}
+               />
+            </Wrapper>
+         </UIApp>
+      )
+   }
+}
+const Wrapper = styled.div`
+   margin: 20px auto;
+   text-align: center;
+   line-height: 20px;
+`
 ```
 {% endcode-tabs-item %}
 {% endcode-tabs %}
@@ -43,11 +61,12 @@ It's `<input type="text" />` in html, take a look at the input box right below t
 **Props explanation**
 
 | Name | Type | Description |
-| --- | --- | --- | --- | --- |
+| --- | --- | --- | --- | --- | --- |
 | `type` | string | Type of input to validate user's input value |
 | `size` | string | Size of input box |
 | `align` | string | Alignment of the text inside the input box |
 | `plain` | boolean | Should remove all styles of the input box |
+| `placeholder` | string | Appear when UI Input has no value |
 
 
 
@@ -55,15 +74,39 @@ It's `<input type="text" />` in html, take a look at the input box right below t
 
 It's `<button />` in html, take a look at the Button "Add New Item" with a little plus on the left side.
 
-![UIButton](../../.gitbook/assets/screen-shot-2018-06-11-at-2.54.02-pm.png)
+![UI Button](../../.gitbook/assets/screen-shot-2018-06-13-at-3.49.48-pm.png)
 
   
 **Code related**
 
 {% code-tabs %}
-{% code-tabs-item title="pfapp/common/elements/List/List.js" %}
+{% code-tabs-item title="pfapp/projects/playground/views/index.js" %}
 ```jsx
-<UIButton icon="plus" label="Add New Item" onClick={this.addItem} />
+import UIApp from 'components/ui/providers/UIApp'
+import UI from 'components'
+
+export default class extends Component {
+   render() {
+      return (
+         <UIApp>
+            <Wrapper>
+               <h3>I'm UI Button</h3>
+               <UI.Button
+                  label="Click me"
+                  onClick={e => {
+                     console.log('you have just clicked me', e)
+                  }}
+               />
+            </Wrapper>
+         </UIApp>
+      )
+   }
+}
+const Wrapper = styled.div`
+   margin: 20px auto;
+   text-align: center;
+   line-height: 20px;
+`
 ```
 {% endcode-tabs-item %}
 {% endcode-tabs %}
@@ -86,28 +129,49 @@ It's `<button />` in html, take a look at the Button "Add New Item" with a littl
 
 UI Select is placed underneath the Font Family label in the below picture.
 
-![UISelect](../../.gitbook/assets/screen-shot-2018-06-11-at-3.19.03-pm.png)
+![UI Select](../../.gitbook/assets/screen-shot-2018-06-13-at-4.03.22-pm.png)
 
 **Code related**
 
 {% code-tabs %}
-{% code-tabs-item title="pfapp/common/fields/styling/font.js" %}
+{% code-tabs-item title="pfapp/projects/playground/views/index.js" %}
 ```jsx
-<UISelect
-	off=""
-	bind="style.fontFamily"
-	parse={parseFontFamily}
-	options={fonts.map(f => {
-		if (!f.get('label')) f.set('label', f.get('family'))
-		return f
-	})}
-	mapping={fontOptionsMap}
-	emptyOption
-	style={{ width: '100%' }}
-/>
+import UIApp from 'components/ui/providers/UIApp'
+import UI from 'components'
+import { DropdownInstance } from 'modules/dropdown'
+import UIWidget from 'components/ui/interfaces/UIWidget'
+
+export default class extends Component {
+   render() {
+      return (
+         <UIApp>
+            <Wrapper>
+               <h3>I'm UI Select</h3>
+               <UI.Select
+                  options={['Option 1', 'Option 2', 'Option 3']}
+                  onChange={value => {
+                     console.log('selected value', value)
+                  }}
+               />
+               <UIWidget.Portal />
+               <DropdownInstance />
+            </Wrapper>
+         </UIApp>
+      )
+   }
+}
+const Wrapper = styled.div`
+   margin: 20px auto;
+   text-align: center;
+   line-height: 20px;
+`
 ```
 {% endcode-tabs-item %}
 {% endcode-tabs %}
+
+{% hint style="info" %}
+It's important to have `UIWidget.Portal` and `DropdownInstance`, otherwise, the above code will never run.
+{% endhint %}
 
 #### Props explanation
 
@@ -266,8 +330,10 @@ const Wrapper = styled.div`
 ## UI Widgets
 
 > All UI Widgets use `UIWidget` - A React Component makes its inheritances floated by increasing their zIndex by one based on a global variable `UIWidget.zIndex` so that the latest gets floated always get the highest `zIndex` value.
->
-> NOTICE: It's important to have `UIWidget.Portal` rendered somewhere so that all UI Widgets have a place to render
+
+{% hint style="info" %}
+It's important to have `UIWidget.Portal` rendered somewhere so that all UI Widgets have a place to render
+{% endhint %}
 
 ### UIPopup
 
