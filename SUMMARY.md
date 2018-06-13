@@ -17,8 +17,8 @@
 
 ## PageFly
 
-* [App installation](pagefly/app-installation.md)
-* [Backend API](pagefly/backend-api.md)
+* [Getting Started](pagefly/app-installation.md)
+* [API Reference](pagefly/backend-api.md)
 
 ## JSN PB3
 

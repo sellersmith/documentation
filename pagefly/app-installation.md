@@ -1,4 +1,4 @@
-# App installation
+# Getting Started
 
 ### Prerequisites
 
