@@ -4,8 +4,8 @@
 
 ## General
 
-* [Ecosystem](general/pagefly-app-ecosystem.md)
-* [Environment](general/environment-and-requirement.md)
+* [PageFly Ecosystem](general/pagefly-app-ecosystem.md)
+* [Dev Environment](general/environment-and-requirement.md)
 * [API Reference](general/api-reference.md)
 
 ## App core
