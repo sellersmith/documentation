@@ -32,13 +32,7 @@ ManyThanks - Shopify thank you page builder is a free app to customize thank you
 
 ## Tools used in PageFly
 
-#### Webpack
-
-#### ESLint + Prettier
-
-#### Babel
-
-#### Others
+## API Reference
 
 
 
