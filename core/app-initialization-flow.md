@@ -33,5 +33,5 @@ page.set({
 
 ### Page Container
 
-This is where you define functionality to handle the communicating part between backend and editor app, simply add your function/needed state in to `pageContainer.js` file and follow [`unstated`](https://github.com/jamiebuilds/unstated) implementation.
+This is where you define functionality to handle the communicating part between backend and editor app, simply add your function/needed state in to `pageContainer.js` file and follow [`unstated`](https://github.com/jamiebuilds/unstated) implementation...
 
