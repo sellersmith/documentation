@@ -28,5 +28,5 @@
 
 * [App installation](manythanks/app-installation.md)
 * [Technical architecture](manythanks/technical-architecture.md)
-* [App API](manythanks/app-api.md)
+* [API Reference](manythanks/app-api.md)
 

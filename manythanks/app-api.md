@@ -1,4 +1,4 @@
-# App API
+# API Reference
 
 {% api-method method="get" host="https://manythanks.pagefly.io" path="/api/shopify/thankyou" %}
 {% api-method-summary %}
