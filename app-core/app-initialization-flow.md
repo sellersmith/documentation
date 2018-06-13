@@ -2,7 +2,7 @@
 description: This part tell you how the app initialize and running.
 ---
 
-# App Initialization flow
+# Getting Started
 
 ## Webpack
 

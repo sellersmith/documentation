@@ -1,4 +1,4 @@
-# PageFly App Ecosystem
+# Ecosystem
 
 ![](../.gitbook/assets/image.png)
 

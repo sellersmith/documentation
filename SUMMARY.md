@@ -4,13 +4,14 @@
 
 ## General
 
-* [PageFly App Ecosystem](general/pagefly-app-ecosystem.md)
-* [Environment & Requirement](general/environment-and-requirement.md)
+* [Ecosystem](general/pagefly-app-ecosystem.md)
+* [Environment](general/environment-and-requirement.md)
+* [API Reference](general/api-reference.md)
 
 ## App core
 
 * [Pagefly Elements](app-core/pagefly-elements.md)
-* [App Initialization flow](app-core/app-initialization-flow.md)
+* [Getting Started](app-core/app-initialization-flow.md)
 * [Components usage guidelines](app-core/components-usage-guidelines/README.md)
   * [Designing views using UI Layouts](app-core/components-usage-guidelines/designing-views-using-ui-layouts.md)
   * [UI Components References](app-core/components-usage-guidelines/ui-components-references.md)

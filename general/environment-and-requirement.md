@@ -1,4 +1,4 @@
-# Environment & Requirement
+# Environment
 
 ## Operating System
 
