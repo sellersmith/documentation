@@ -170,6 +170,54 @@ const Wrapper = styled.div`
 
 ### UISlider
 
+![UI Slider](../../.gitbook/assets/screen-shot-2018-06-13-at-2.32.40-pm.png)
+
+#### Code related
+
+{% code-tabs %}
+{% code-tabs-item title="pfapp/projects/playground/view/index.js" %}
+```jsx
+import UIApp from 'components/ui/providers/UIApp'
+import UI from 'components'
+
+export default class extends Component {
+   render() {
+      return (
+         <UIApp>
+            <Wrapper>
+               <h3>I'm UI Slider</h3>
+               <UI.Slider
+                  min={700}
+                  max={1200}
+                  step={100}
+                  onChange={value => {
+                     console.log('new value', value)
+                  }}
+               />
+            </Wrapper>
+         </UIApp>
+      )
+   }
+}
+const Wrapper = styled.div`
+   margin: 20px auto;
+   text-align: center;
+   line-height: 20px;
+`
+```
+{% endcode-tabs-item %}
+{% endcode-tabs %}
+
+#### Props explanation
+
+| Name | Type | Description |
+| --- | --- | --- | --- | --- | --- |
+| `min` | number | Min value |
+| `max` | number | Max value |
+| `step` | number | Sliding step value |
+| `points` | array | An array of sliding points in number format |
+| `specialValues` | array | An array of special values which have a match label |
+
 ### UISwitch
 
 ### UITogglable
