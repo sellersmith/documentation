@@ -122,6 +122,52 @@ UI Select is placed underneath the Font Family label in the below picture.
 
 ### UICheckbox
 
+![UI Checkbox](../../.gitbook/assets/screen-shot-2018-06-13-at-2.25.17-pm%20%281%29.png)
+
+#### Code related
+
+{% code-tabs %}
+{% code-tabs-item title="pfapp/projects/playground/views/index.js" %}
+```jsx
+import UIApp from 'components/ui/providers/UIApp'
+import UI from 'components'
+
+export default class extends Component {
+   render() {
+      return (
+         <UIApp>
+            <Wrapper>
+               <h3>Hi there ;)</h3>
+               We introduce to you our UI Slider.
+               <UI.Checkbox
+                  label="The checkbox is on my left, and I am its label"
+                  isOn
+                  onChange={value => {
+                     console.log('new value', value)
+                  }}
+               />
+            </Wrapper>
+         </UIApp>
+      )
+   }
+}
+const Wrapper = styled.div`
+   margin: 20px auto;
+   text-align: center;
+   line-height: 20px;
+`
+```
+{% endcode-tabs-item %}
+{% endcode-tabs %}
+
+#### Props explanation
+
+| Name | Type | Description |
+| --- | --- | --- | --- |
+| `isOn` | boolean | Should UI Checkbox be checked by default |
+| `label` | string | Label of UI Checkbox |
+| `onChange` | function | Triggered after checked state is changed |
+
 ### UISlider
 
 ### UISwitch
