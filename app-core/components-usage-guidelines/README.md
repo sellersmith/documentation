@@ -1,10 +1,3 @@
----
-description: >-
-  This focuses mainly on how you should use the pre-built components in our
-  project to shorten the time spending on a given task rather than just explain
-  them.
----
-
 # Components usage guidelines
 
 ## First thing first

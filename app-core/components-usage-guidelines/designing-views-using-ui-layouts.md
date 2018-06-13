@@ -1,9 +1,3 @@
----
-description: >-
-  Views are in every corner inside our projects, we introduce examples to you
-  here to make it less painful while designing UI.
----
-
 # Designing views using UI Layouts
 
 ## Overview

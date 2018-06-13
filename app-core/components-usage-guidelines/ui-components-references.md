@@ -1,7 +1,3 @@
----
-description: An overall picture of all UI Components
----
-
 # UI Components References
 
 ## UI Controls

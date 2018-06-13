@@ -1,7 +1,3 @@
----
-description: An introduction to begin working with Pagefly Element
----
-
 # Pagefly Elements
 
 
