@@ -6,7 +6,8 @@
 
 * [PageFly Ecosystem](general/pagefly-app-ecosystem.md)
 * [Dev Environment](general/environment-and-requirement.md)
-* [API Reference](general/api-reference.md)
+* [API Reference](general/api-reference/README.md)
+  * [Element](general/api-reference/element.md)
 
 ## App core
 
