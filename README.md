@@ -4,7 +4,7 @@
 
 PageFly core is a cross-platform JS app made by PageFly team base on ReactJS. We can deploy a new project within a minutes with PageFly core.
 
-{% page-ref page="general/environment-and-requirement.md" %}
+{% page-ref page="general/dev-environment.md" %}
 
 {% page-ref page="app-core/pagefly-elements.md" %}
 
@@ -26,7 +26,7 @@ ManyThanks - Shopify thank you page builder is a free app to customize thank you
 
 {% page-ref page="manythanks/app-installation.md" %}
 
-{% page-ref page="manythanks/app-api.md" %}
+{% page-ref page="manythanks/api-reference.md" %}
 
 
 
