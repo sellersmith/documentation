@@ -2,10 +2,10 @@
 
 ## Props
 
-| Prop | Type | Requried | Description |
+| Name | Type | Requried | Description |
 | --- | --- | --- | --- |
 | type | `string` | `false` |  |
-| id | `string, number` | `false` |  |
+| id | `string,number` | `false` |  |
 | tag | `string` | `false` |  |
 | name | `string` | `false` |  |
 | href | `string` | `false` |  |
@@ -13,7 +13,7 @@
 | attrs | `string` | `false` |  |
 | classes | `string` | `false` |  |
 | variant | `string` | `false` |  |
-| preset | `string, number` | `false` |  |
+| preset | `string,number` | `false` |  |
 | psuedo | `string` | `false` |  |
 | psuedoState | `string` | `false` |  |
 | data | `object` | `false` |  |
@@ -44,50 +44,50 @@
 
 
 
-## `static` contextTypes(  )
+## `static` contextTypes()
 
 
-## `static` contextTypes( types )
-
-| Param | Type | Description |
-| --- | --- | --- |
-| types | `null` |  |
-
-
-## `static` childContextTypes(  )
-
-
-## `static` childContextTypes( types )
+## `static` contextTypes(types)
 
 | Param | Type | Description |
 | --- | --- | --- |
 | types | `null` |  |
 
 
-## `static` propTypes(  )
+## `static` childContextTypes()
 
 
-## `static` propTypes( types )
+## `static` childContextTypes(types)
 
 | Param | Type | Description |
 | --- | --- | --- |
 | types | `null` |  |
 
 
-## `static` defaultProps(  )
+## `static` propTypes()
 
 
-## `static` defaultProps( props )
+## `static` propTypes(types)
+
+| Param | Type | Description |
+| --- | --- | --- |
+| types | `null` |  |
+
+
+## `static` defaultProps()
+
+
+## `static` defaultProps(props)
 
 | Param | Type | Description |
 | --- | --- | --- |
 | props | `null` |  |
 
 
-##  updateComputedStyle(  )
+##  updateComputedStyle()
 
 
-##  set( path , value )
+##  set(path,value)
 
 get /set methods provide a simple interface for
 exchanging data with other libraries. Our UI Controls
@@ -99,116 +99,116 @@ will look for the get / set function and use it first
 | value | `undefined` |  |
 
 
-##  stateHandler(  )
+##  stateHandler()
 
 
-##  style(  )
+##  style()
 
 
-##  styleHandler(  )
+##  styleHandler()
 
 
-##  hasher(  )
+##  hasher()
 
 
-##  computedStyle(  )
+##  computedStyle()
 
 
-##  inspector(  )
+##  inspector()
 
 
-##  inspector( input )
+##  inspector(input)
 
 | Param | Type | Description |
 | --- | --- | --- |
 | input | `null` |  |
 
 
-##  key(  )
+##  key()
 
 
-##  page(  )
+##  page()
 
 
-##  editor(  )
+##  editor()
 
 
-##  parent(  )
+##  parent()
 
 
-##  section(  )
+##  section()
 
 
-##  document(  )
+##  document()
 
 
-##  window(  )
+##  window()
 
 
-##  path(  )
+##  path()
 
 
-##  data(  )
+##  data()
 
 
-##  dataJSON(  )
+##  dataJSON()
 
 
-##  templateJSON(  )
+##  templateJSON()
 
 Return a nested data with its children mapped with actual data
 Normally, element children state only store an array of IDs
 The real data is stored on the items state of page
 
 
-##  label(  )
+##  label()
 
 Label for showing on top left corner of element when mouse over
 
 
-##  pathLabel(  )
+##  pathLabel()
 
 Label for showing in path view in header of inspectors
 
 
-##  index(  )
+##  index()
 
 Return the index of this element in which parent it was rendered in
 
 
-##  mode(  )
+##  mode()
 
 Return current page's render mode => 'edit' or 'view'
 
 
-##  id(  )
+##  id()
 
 Return the unique id generated for this element instance
 
 
-##  type(  )
+##  type()
 
 Return this element type
 
 
-##  name(  )
+##  name()
 
 Return this element name
 
 
-##  hash(  )
+##  hash()
 
 Computed unique hash key for every element based on
 --- Element type + Page ID + Element ID
 
 
-##  selectorName(  )
+##  selectorName()
 
 Return a generated hash based on element's type and page's id
 This hash only need to be generated once when the first instance initialised
 
 
-##  selectorClassNames(  )
+##  selectorClassNames()
 
 A list of class names associated with this element
 
@@ -217,7 +217,7 @@ A list of class names associated with this element
 3) A hash for variant which this element inherited its style from
 
 
-##  selector(  )
+##  selector()
 
 It's very important to keep this function SIMPLE and STRAGHT FOWARD
 it should return an unique CSS selector depends on where it's rendered
@@ -228,53 +228,53 @@ The structures are:
 3) ._PKxInD ._PKxInD         <-- Item in a collection block
 
 
-##  selectorLegacy(  )
+##  selectorLegacy()
 
 
-##  formattedName(  )
+##  formattedName()
 
 
-##  locked(  )
+##  locked()
 
 Get the current locked state
 
 
-##  flow(  )
+##  flow()
 
 Get the flow direction used for sorting elements
 
 
-##  boundingBoxNode(  )
+##  boundingBoxNode()
 
 
-##  boundingBox(  )
+##  boundingBox()
 
 
-##  updateCachedBounds(  )
+##  updateCachedBounds()
 
 
-##  OldboundingBox(  )
+##  OldboundingBox()
 
 
-##  isEmpty(  )
+##  isEmpty()
 
 
-##  placeholder(  )
+##  placeholder()
 
 
-##  isNested(  )
+##  isNested()
 
 
-##  isProElement(  )
+##  isProElement()
 
 
-##  visibility(  )
+##  visibility()
 
 
-##  dataModel(  )
+##  dataModel()
 
 
-##  prepareData(  )
+##  prepareData()
 
 Parent element will invoke this function on all of its children
 before proceeding with its data extracting procedure. This ensure
@@ -284,7 +284,7 @@ In this very specific case, all nested element need to update its styles
 in the parent state. This apply for bound element with "bind" prop only.
 
 
-##  _parseProps( props )
+##  _parseProps(props)
 
 Take only the properties defined in static getProptypes
 
@@ -293,7 +293,7 @@ Take only the properties defined in static getProptypes
 | props | `undefined` |  |
 
 
-##  getStyleSelector( psuedo , state , psuedoState )
+##  getStyleSelector(psuedo,state,psuedoState)
 
 | Param | Type | Description |
 | --- | --- | --- |
@@ -302,7 +302,7 @@ Take only the properties defined in static getProptypes
 | psuedoState | `null` |  |
 
 
-##  customHash( pageKey , elKey , elType )
+##  customHash(pageKey,elKey,elType)
 
 custom hash used for preset
 
@@ -313,17 +313,17 @@ custom hash used for preset
 | elType | `mixed` | => type of preset |
 
 
-##  findAll(  )
+##  findAll()
 
 Find all deeply nested child components
 
 
-##  extractStyles(  )
+##  extractStyles()
 
 Extract all style rules belong to this element and render as CSS text
 
 
-##  applyStyles( styles )
+##  applyStyles(styles)
 
 Apply element styles passed as props to page stylesheets
 
@@ -332,7 +332,7 @@ Apply element styles passed as props to page stylesheets
 | styles | `null` |  |
 
 
-##  css( prop )
+##  css(prop)
 
 Return the computed style of this element's DOMNode
 
@@ -341,7 +341,7 @@ Return the computed style of this element's DOMNode
 | prop | `null` |  |
 
 
-##  isChildOf( parent )
+##  isChildOf(parent)
 
 Check if this element is child of given element
 
@@ -350,24 +350,24 @@ Check if this element is child of given element
 | parent | `null` |  |
 
 
-##  isChildOfParentType( type )
+##  isChildOfParentType(type)
 
 | Param | Type | Description |
 | --- | --- | --- |
 | type | `null` |  |
 
 
-##  forceUpdateAll( callback )
+##  forceUpdateAll(callback)
 
 | Param | Type | Description |
 | --- | --- | --- |
 | callback | `null` |  |
 
 
-##  copy(  )
+##  copy()
 
 
-##  setStyle( nextStyle , psuedo )
+##  setStyle(nextStyle,psuedo)
 
 | Param | Type | Description |
 | --- | --- | --- |
@@ -375,14 +375,14 @@ Check if this element is child of given element
 | psuedo | `null` |  |
 
 
-##  getStyle( psuedo )
+##  getStyle(psuedo)
 
 | Param | Type | Description |
 | --- | --- | --- |
 | psuedo | `null` |  |
 
 
-##  saveState( state , cb )
+##  saveState(state,cb)
 
 | Param | Type | Description |
 | --- | --- | --- |
@@ -390,7 +390,7 @@ Check if this element is child of given element
 | cb | `null` |  |
 
 
-##  getCopiedElLayout(  )
+##  getCopiedElLayout()
 
 ThanhCH Oct 2 2017
 Core COPY/PASTE styles feature is implemented here
@@ -404,7 +404,7 @@ so the order is certainly unchanged => The styles will be applied respectively w
 that's why we need to check the layout
 
 
-##  constructLayout( layout , el )
+##  constructLayout(layout,el)
 
 | Param | Type | Description |
 | --- | --- | --- |
@@ -412,27 +412,10 @@ that's why we need to check the layout
 | el | `null` |  |
 
 
-##  getAllStyles(  )
+##  getAllStyles()
 
 
-##  constructStyles( styles , el )
-
-| Param | Type | Description |
-| --- | --- | --- |
-| styles | `null` |  |
-| el | `null` |  |
-
-
-##  copyStyles(  )
-
-
-##  canPasteStyle(  )
-
-
-##  pasteStyles(  )
-
-
-##  applyClipboardStyle( styles , el )
+##  constructStyles(styles,el)
 
 | Param | Type | Description |
 | --- | --- | --- |
@@ -440,15 +423,32 @@ that's why we need to check the layout
 | el | `null` |  |
 
 
-##  focus(  )
+##  copyStyles()
+
+
+##  canPasteStyle()
+
+
+##  pasteStyles()
+
+
+##  applyClipboardStyle(styles,el)
+
+| Param | Type | Description |
+| --- | --- | --- |
+| styles | `null` |  |
+| el | `null` |  |
+
+
+##  focus()
 
 ====== end COPY/PASTE implementation ====
 
 
-##  select(  )
+##  select()
 
 
-##  triggerAction( action , ...args )
+##  triggerAction(action,...args)
 
 | Param | Type | Description |
 | --- | --- | --- |
@@ -456,98 +456,98 @@ that's why we need to check the layout
 | ...args | `null` |  |
 
 
-##  handleMouseDown( e )
+##  handleMouseDown(e)
 
 | Param | Type | Description |
 | --- | --- | --- |
 | e | `null` |  |
 
 
-##  handleMouseEnter( e )
+##  handleMouseEnter(e)
 
 | Param | Type | Description |
 | --- | --- | --- |
 | e | `null` |  |
 
 
-##  handleMouseOver( e )
+##  handleMouseOver(e)
 
 | Param | Type | Description |
 | --- | --- | --- |
 | e | `null` |  |
 
 
-##  handleMouseOut( e )
+##  handleMouseOut(e)
 
 | Param | Type | Description |
 | --- | --- | --- |
 | e | `null` |  |
 
 
-##  handleMouseLeave( e )
+##  handleMouseLeave(e)
 
 | Param | Type | Description |
 | --- | --- | --- |
 | e | `null` |  |
 
 
-##  handleDrag( e )
+##  handleDrag(e)
 
 | Param | Type | Description |
 | --- | --- | --- |
 | e | `null` |  |
 
 
-##  handleDragEnd( e )
+##  handleDragEnd(e)
 
 | Param | Type | Description |
 | --- | --- | --- |
 | e | `null` |  |
 
 
-##  handleDragStart( e )
+##  handleDragStart(e)
 
 | Param | Type | Description |
 | --- | --- | --- |
 | e | `null` |  |
 
 
-##  handleDragEnter( e )
+##  handleDragEnter(e)
 
 | Param | Type | Description |
 | --- | --- | --- |
 | e | `null` |  |
 
 
-##  handleDragOver( e )
+##  handleDragOver(e)
 
 | Param | Type | Description |
 | --- | --- | --- |
 | e | `null` |  |
 
 
-##  handleDragLeave( e )
+##  handleDragLeave(e)
 
 | Param | Type | Description |
 | --- | --- | --- |
 | e | `null` |  |
 
 
-##  moveItem( child )
+##  moveItem(child)
 
 | Param | Type | Description |
 | --- | --- | --- |
 | child | `null` |  |
 
 
-##  handleDrop( e )
+##  handleDrop(e)
 
 | Param | Type | Description |
 | --- | --- | --- |
 | e | `null` |  |
 
 
-##  enhanceTemplateJSON( templateJSON , parentType , isMoved )
+##  enhanceTemplateJSON(templateJSON,parentType,isMoved)
 
 | Param | Type | Description |
 | --- | --- | --- |
@@ -556,7 +556,7 @@ that's why we need to check the layout
 | isMoved | `null` |  |
 
 
-##  showPlaceHolder( edge , bounds )
+##  showPlaceHolder(edge,bounds)
 
 | Param | Type | Description |
 | --- | --- | --- |
@@ -564,22 +564,22 @@ that's why we need to check the layout
 | bounds | `null` |  |
 
 
-##  hidePlaceHolder(  )
+##  hidePlaceHolder()
 
 
-##  enhance( element )
+##  enhance(element)
 
 | Param | Type | Description |
 | --- | --- | --- |
 | element | `null` |  |
 
 
-##  remove(  )
+##  remove()
 
 DEPRECATED FUNCTIONS !!
 This is left for fallback support our previous elements
 DO NOT use these in new codes
 
 
-##  _duplicate(  )
+##  _duplicate()
 
