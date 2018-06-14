@@ -93,9 +93,11 @@
 
 ##  set(path,value)
 
+
 > get /set methods provide a simple interface for
 > exchanging data with other libraries. Our UI Controls
 > will look for the get / set function and use it first
+
 
 | Param | Type | Description |
 | --- | --- | --- |
@@ -161,49 +163,70 @@
 
 ##  templateJSON()
 
+
 > Return a nested data with its children mapped with actual data
 > Normally, element children state only store an array of IDs
 > The real data is stored on the items state of page
 
+
 ##  label()
+
 
 > Label for showing on top left corner of element when mouse over
 
+
 ##  pathLabel()
+
 
 > Label for showing in path view in header of inspectors
 
+
 ##  index()
+
 
 > Return the index of this element in which parent it was rendered in
 
+
 ##  mode()
+
 
 > Return current page's render mode => 'edit' or 'view'
 
+
 ##  id()
+
 
 > Return the unique id generated for this element instance
 
+
 ##  type()
+
 
 > Return this element type
 
+
 ##  name()
+
 
 > Return this element name
 
+
 ##  hash()
+
 
 > Computed unique hash key for every element based on
 > --- Element type + Page ID + Element ID
 
+
 ##  selectorName()
+
 
 > Return a generated hash based on element's type and page's id
 > This hash only need to be generated once when the first instance initialised
 
+
 ##  selectorClassNames()
+
 
 > A list of class names associated with this element
 > 
@@ -211,7 +234,9 @@
 > 2) A hash encrypted from type, page key, and element key
 > 3) A hash for variant which this element inherited its style from
 
+
 ##  selector()
+
 
 > It's very important to keep this function SIMPLE and STRAGHT FOWARD
 > it should return an unique CSS selector depends on where it's rendered
@@ -221,6 +246,7 @@
 > 2) ._GAyI7J__title           <-- Element in a block
 > 3) ._PKxInD ._PKxInD         <-- Item in a collection block
 
+
 ##  selectorLegacy()
 
 
@@ -229,11 +255,15 @@
 
 ##  locked()
 
+
 > Get the current locked state
+
 
 ##  flow()
 
+
 > Get the flow direction used for sorting elements
+
 
 ##  boundingBoxNode()
 
@@ -267,6 +297,7 @@
 
 ##  prepareData()
 
+
 > Parent element will invoke this function on all of its children
 > before proceeding with its data extracting procedure. This ensure
 > all child element get a chance to populate its latest data where needed.
@@ -274,9 +305,12 @@
 > In this very specific case, all nested element need to update its styles
 > in the parent state. This apply for bound element with "bind" prop only.
 
+
 ##  _parseProps(props)
 
+
 > Take only the properties defined in static getProptypes
+
 
 | Param | Type | Description |
 | --- | --- | --- |
@@ -295,7 +329,9 @@
 
 ##  customHash(pageKey,elKey,elType)
 
+
 > custom hash used for preset
+
 
 | Param | Type | Description |
 | --- | --- | --- |
@@ -306,15 +342,21 @@
 
 ##  findAll()
 
+
 > Find all deeply nested child components
+
 
 ##  extractStyles()
 
+
 > Extract all style rules belong to this element and render as CSS text
+
 
 ##  applyStyles(styles)
 
+
 > Apply element styles passed as props to page stylesheets
+
 
 | Param | Type | Description |
 | --- | --- | --- |
@@ -323,7 +365,9 @@
 
 ##  css(prop)
 
+
 > Return the computed style of this element's DOMNode
+
 
 | Param | Type | Description |
 | --- | --- | --- |
@@ -332,7 +376,9 @@
 
 ##  isChildOf(parent)
 
+
 > Check if this element is child of given element
+
 
 | Param | Type | Description |
 | --- | --- | --- |
@@ -386,6 +432,7 @@
 
 ##  getCopiedElLayout()
 
+
 > ThanhCH Oct 2 2017
 > Core COPY/PASTE styles feature is implemented here
 > How it works:
@@ -396,6 +443,7 @@
 > saved layout and saved styles are actually arrays, because constructing function of layout and styles are consistent
 > so the order is certainly unchanged => The styles will be applied respectively well with that order
 > that's why we need to check the layout
+
 
 ##  constructLayout(layout,el)
 
@@ -438,7 +486,9 @@
 
 ##  focus()
 
+
 > ====== end COPY/PASTE implementation ====
+
 
 ##  select()
 
@@ -588,9 +638,11 @@
 
 ##  remove()
 
+
 > DEPRECATED FUNCTIONS !!
 > This is left for fallback support our previous elements
 > DO NOT use these in new codes
+
 
 ##  _duplicate()
 
