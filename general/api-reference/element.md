@@ -1,40 +1,26 @@
-# Element
+# Foo
 
-### Props
+## Props
 
-| Name | Type | Requried |
-| --- | --- |
-| Types.string | Types.string | true |
+| Name | Type | Requried | Description |
+| --- | --- | --- | --- |
+| **bar** | `string` | `false` |  |
 
-{% api-method method="get" host="" path="" %}
-{% api-method-summary %}
-contructor\(\)
-{% endapi-method-summary %}
 
-{% api-method-description %}
+## Methods
 
-{% endapi-method-description %}
 
-{% api-method-spec %}
-{% api-method-request %}
-{% api-method-path-parameters %}
-{% api-method-parameter name="" type="string" required=false %}
+##  aaa (  )
 
-{% endapi-method-parameter %}
-{% endapi-method-path-parameters %}
-{% endapi-method-request %}
+This is aaa function
 
-{% api-method-response %}
-{% api-method-response-example httpCode=200 %}
-{% api-method-response-example-description %}
+## `static` bbb (  )
 
-{% endapi-method-response-example-description %}
 
-```
+##  ccc ( a , b , c )
 
-```
-{% endapi-method-response-example %}
-{% endapi-method-response %}
-{% endapi-method-spec %}
-{% endapi-method %}
-
+| Param | Type | Description |
+| --- | --- | --- | --- |
+| a | `null` |  |
+| b | `null` |  |
+| c | `null` |  |
