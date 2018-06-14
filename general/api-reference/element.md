@@ -49,6 +49,7 @@
 
 ## `static` contextTypes(types)
 
+
 | Param | Type | Description |
 | --- | --- | --- |
 | types | `null` |  |
@@ -58,6 +59,7 @@
 
 
 ## `static` childContextTypes(types)
+
 
 | Param | Type | Description |
 | --- | --- | --- |
@@ -69,6 +71,7 @@
 
 ## `static` propTypes(types)
 
+
 | Param | Type | Description |
 | --- | --- | --- |
 | types | `null` |  |
@@ -78,6 +81,7 @@
 
 
 ## `static` defaultProps(props)
+
 
 | Param | Type | Description |
 | --- | --- | --- |
@@ -92,6 +96,7 @@
 > get /set methods provide a simple interface for
 > exchanging data with other libraries. Our UI Controls
 > will look for the get / set function and use it first
+
 | Param | Type | Description |
 | --- | --- | --- |
 | path | `undefined` |  |
@@ -117,6 +122,7 @@
 
 
 ##  inspector(input)
+
 
 | Param | Type | Description |
 | --- | --- | --- |
@@ -271,12 +277,14 @@
 ##  _parseProps(props)
 
 > Take only the properties defined in static getProptypes
+
 | Param | Type | Description |
 | --- | --- | --- |
 | props | `undefined` |  |
 
 
 ##  getStyleSelector(psuedo,state,psuedoState)
+
 
 | Param | Type | Description |
 | --- | --- | --- |
@@ -288,6 +296,7 @@
 ##  customHash(pageKey,elKey,elType)
 
 > custom hash used for preset
+
 | Param | Type | Description |
 | --- | --- | --- |
 | pageKey | `mixed` |  |
@@ -306,6 +315,7 @@
 ##  applyStyles(styles)
 
 > Apply element styles passed as props to page stylesheets
+
 | Param | Type | Description |
 | --- | --- | --- |
 | styles | `null` |  |
@@ -314,6 +324,7 @@
 ##  css(prop)
 
 > Return the computed style of this element's DOMNode
+
 | Param | Type | Description |
 | --- | --- | --- |
 | prop | `null` |  |
@@ -322,6 +333,7 @@
 ##  isChildOf(parent)
 
 > Check if this element is child of given element
+
 | Param | Type | Description |
 | --- | --- | --- |
 | parent | `null` |  |
@@ -329,12 +341,14 @@
 
 ##  isChildOfParentType(type)
 
+
 | Param | Type | Description |
 | --- | --- | --- |
 | type | `null` |  |
 
 
 ##  forceUpdateAll(callback)
+
 
 | Param | Type | Description |
 | --- | --- | --- |
@@ -346,6 +360,7 @@
 
 ##  setStyle(nextStyle,psuedo)
 
+
 | Param | Type | Description |
 | --- | --- | --- |
 | nextStyle | `null` |  |
@@ -354,12 +369,14 @@
 
 ##  getStyle(psuedo)
 
+
 | Param | Type | Description |
 | --- | --- | --- |
 | psuedo | `null` |  |
 
 
 ##  saveState(state,cb)
+
 
 | Param | Type | Description |
 | --- | --- | --- |
@@ -382,6 +399,7 @@
 
 ##  constructLayout(layout,el)
 
+
 | Param | Type | Description |
 | --- | --- | --- |
 | layout | `null` |  |
@@ -392,6 +410,7 @@
 
 
 ##  constructStyles(styles,el)
+
 
 | Param | Type | Description |
 | --- | --- | --- |
@@ -410,6 +429,7 @@
 
 ##  applyClipboardStyle(styles,el)
 
+
 | Param | Type | Description |
 | --- | --- | --- |
 | styles | `null` |  |
@@ -425,6 +445,7 @@
 
 ##  triggerAction(action,...args)
 
+
 | Param | Type | Description |
 | --- | --- | --- |
 | action | `null` |  |
@@ -433,12 +454,14 @@
 
 ##  handleMouseDown(e)
 
+
 | Param | Type | Description |
 | --- | --- | --- |
 | e | `null` |  |
 
 
 ##  handleMouseEnter(e)
+
 
 | Param | Type | Description |
 | --- | --- | --- |
@@ -447,12 +470,14 @@
 
 ##  handleMouseOver(e)
 
+
 | Param | Type | Description |
 | --- | --- | --- |
 | e | `null` |  |
 
 
 ##  handleMouseOut(e)
+
 
 | Param | Type | Description |
 | --- | --- | --- |
@@ -461,12 +486,14 @@
 
 ##  handleMouseLeave(e)
 
+
 | Param | Type | Description |
 | --- | --- | --- |
 | e | `null` |  |
 
 
 ##  handleDrag(e)
+
 
 | Param | Type | Description |
 | --- | --- | --- |
@@ -475,12 +502,14 @@
 
 ##  handleDragEnd(e)
 
+
 | Param | Type | Description |
 | --- | --- | --- |
 | e | `null` |  |
 
 
 ##  handleDragStart(e)
+
 
 | Param | Type | Description |
 | --- | --- | --- |
@@ -489,12 +518,14 @@
 
 ##  handleDragEnter(e)
 
+
 | Param | Type | Description |
 | --- | --- | --- |
 | e | `null` |  |
 
 
 ##  handleDragOver(e)
+
 
 | Param | Type | Description |
 | --- | --- | --- |
@@ -503,12 +534,14 @@
 
 ##  handleDragLeave(e)
 
+
 | Param | Type | Description |
 | --- | --- | --- |
 | e | `null` |  |
 
 
 ##  moveItem(child)
+
 
 | Param | Type | Description |
 | --- | --- | --- |
@@ -517,12 +550,14 @@
 
 ##  handleDrop(e)
 
+
 | Param | Type | Description |
 | --- | --- | --- |
 | e | `null` |  |
 
 
 ##  enhanceTemplateJSON(templateJSON,parentType,isMoved)
+
 
 | Param | Type | Description |
 | --- | --- | --- |
@@ -532,6 +567,7 @@
 
 
 ##  showPlaceHolder(edge,bounds)
+
 
 | Param | Type | Description |
 | --- | --- | --- |
@@ -543,6 +579,7 @@
 
 
 ##  enhance(element)
+
 
 | Param | Type | Description |
 | --- | --- | --- |
