@@ -5,7 +5,7 @@
 | Name | Type | Requried | Description |
 | --- | --- | --- | --- |
 | type | `string` | `false` |  |
-| id | `string,number` | `false` |  |
+| id | `string, number` | `false` |  |
 | tag | `string` | `false` |  |
 | name | `string` | `false` |  |
 | href | `string` | `false` |  |
@@ -13,7 +13,7 @@
 | attrs | `string` | `false` |  |
 | classes | `string` | `false` |  |
 | variant | `string` | `false` |  |
-| preset | `string,number` | `false` |  |
+| preset | `string, number` | `false` |  |
 | psuedo | `string` | `false` |  |
 | psuedoState | `string` | `false` |  |
 | data | `object` | `false` |  |
@@ -89,10 +89,9 @@
 
 ##  set(path,value)
 
-get /set methods provide a simple interface for
-exchanging data with other libraries. Our UI Controls
-will look for the get / set function and use it first
-
+> get /set methods provide a simple interface for
+> exchanging data with other libraries. Our UI Controls
+> will look for the get / set function and use it first
 | Param | Type | Description |
 | --- | --- | --- |
 | path | `undefined` |  |
@@ -156,77 +155,65 @@ will look for the get / set function and use it first
 
 ##  templateJSON()
 
-Return a nested data with its children mapped with actual data
-Normally, element children state only store an array of IDs
-The real data is stored on the items state of page
-
+> Return a nested data with its children mapped with actual data
+> Normally, element children state only store an array of IDs
+> The real data is stored on the items state of page
 
 ##  label()
 
-Label for showing on top left corner of element when mouse over
-
+> Label for showing on top left corner of element when mouse over
 
 ##  pathLabel()
 
-Label for showing in path view in header of inspectors
-
+> Label for showing in path view in header of inspectors
 
 ##  index()
 
-Return the index of this element in which parent it was rendered in
-
+> Return the index of this element in which parent it was rendered in
 
 ##  mode()
 
-Return current page's render mode => 'edit' or 'view'
-
+> Return current page's render mode => 'edit' or 'view'
 
 ##  id()
 
-Return the unique id generated for this element instance
-
+> Return the unique id generated for this element instance
 
 ##  type()
 
-Return this element type
-
+> Return this element type
 
 ##  name()
 
-Return this element name
-
+> Return this element name
 
 ##  hash()
 
-Computed unique hash key for every element based on
---- Element type + Page ID + Element ID
-
+> Computed unique hash key for every element based on
+> --- Element type + Page ID + Element ID
 
 ##  selectorName()
 
-Return a generated hash based on element's type and page's id
-This hash only need to be generated once when the first instance initialised
-
+> Return a generated hash based on element's type and page's id
+> This hash only need to be generated once when the first instance initialised
 
 ##  selectorClassNames()
 
-A list of class names associated with this element
-
-1) A hash encrypted from type and page key
-2) A hash encrypted from type, page key, and element key
-3) A hash for variant which this element inherited its style from
-
+> A list of class names associated with this element
+> 
+> 1) A hash encrypted from type and page key
+> 2) A hash encrypted from type, page key, and element key
+> 3) A hash for variant which this element inherited its style from
 
 ##  selector()
 
-It's very important to keep this function SIMPLE and STRAGHT FOWARD
-it should return an unique CSS selector depends on where it's rendered
-
-The structures are:
-1) ._GAyI7J                  <-- Block
-2) ._GAyI7J__title           <-- Element in a block
-3) ._PKxInD ._PKxInD         <-- Item in a collection block
-
+> It's very important to keep this function SIMPLE and STRAGHT FOWARD
+> it should return an unique CSS selector depends on where it's rendered
+> 
+> The structures are:
+> 1) ._GAyI7J                  <-- Block
+> 2) ._GAyI7J__title           <-- Element in a block
+> 3) ._PKxInD ._PKxInD         <-- Item in a collection block
 
 ##  selectorLegacy()
 
@@ -236,13 +223,11 @@ The structures are:
 
 ##  locked()
 
-Get the current locked state
-
+> Get the current locked state
 
 ##  flow()
 
-Get the flow direction used for sorting elements
-
+> Get the flow direction used for sorting elements
 
 ##  boundingBoxNode()
 
@@ -276,18 +261,16 @@ Get the flow direction used for sorting elements
 
 ##  prepareData()
 
-Parent element will invoke this function on all of its children
-before proceeding with its data extracting procedure. This ensure
-all child element get a chance to populate its latest data where needed.
----
-In this very specific case, all nested element need to update its styles
-in the parent state. This apply for bound element with "bind" prop only.
-
+> Parent element will invoke this function on all of its children
+> before proceeding with its data extracting procedure. This ensure
+> all child element get a chance to populate its latest data where needed.
+> ---
+> In this very specific case, all nested element need to update its styles
+> in the parent state. This apply for bound element with "bind" prop only.
 
 ##  _parseProps(props)
 
-Take only the properties defined in static getProptypes
-
+> Take only the properties defined in static getProptypes
 | Param | Type | Description |
 | --- | --- | --- |
 | props | `undefined` |  |
@@ -304,8 +287,7 @@ Take only the properties defined in static getProptypes
 
 ##  customHash(pageKey,elKey,elType)
 
-custom hash used for preset
-
+> custom hash used for preset
 | Param | Type | Description |
 | --- | --- | --- |
 | pageKey | `mixed` |  |
@@ -315,18 +297,15 @@ custom hash used for preset
 
 ##  findAll()
 
-Find all deeply nested child components
-
+> Find all deeply nested child components
 
 ##  extractStyles()
 
-Extract all style rules belong to this element and render as CSS text
-
+> Extract all style rules belong to this element and render as CSS text
 
 ##  applyStyles(styles)
 
-Apply element styles passed as props to page stylesheets
-
+> Apply element styles passed as props to page stylesheets
 | Param | Type | Description |
 | --- | --- | --- |
 | styles | `null` |  |
@@ -334,8 +313,7 @@ Apply element styles passed as props to page stylesheets
 
 ##  css(prop)
 
-Return the computed style of this element's DOMNode
-
+> Return the computed style of this element's DOMNode
 | Param | Type | Description |
 | --- | --- | --- |
 | prop | `null` |  |
@@ -343,8 +321,7 @@ Return the computed style of this element's DOMNode
 
 ##  isChildOf(parent)
 
-Check if this element is child of given element
-
+> Check if this element is child of given element
 | Param | Type | Description |
 | --- | --- | --- |
 | parent | `null` |  |
@@ -392,17 +369,16 @@ Check if this element is child of given element
 
 ##  getCopiedElLayout()
 
-ThanhCH Oct 2 2017
-Core COPY/PASTE styles feature is implemented here
-How it works:
-When copy styles, we also copy the data structure of that given element
-so that we can check if the destination el has the same layout with the original el =>  can paste style
-NOTE:
-copied data is stored in {localStorage}
-saved layout and saved styles are actually arrays, because constructing function of layout and styles are consistent
-so the order is certainly unchanged => The styles will be applied respectively well with that order
-that's why we need to check the layout
-
+> ThanhCH Oct 2 2017
+> Core COPY/PASTE styles feature is implemented here
+> How it works:
+> When copy styles, we also copy the data structure of that given element
+> so that we can check if the destination el has the same layout with the original el =>  can paste style
+> NOTE:
+> copied data is stored in {localStorage}
+> saved layout and saved styles are actually arrays, because constructing function of layout and styles are consistent
+> so the order is certainly unchanged => The styles will be applied respectively well with that order
+> that's why we need to check the layout
 
 ##  constructLayout(layout,el)
 
@@ -442,8 +418,7 @@ that's why we need to check the layout
 
 ##  focus()
 
-====== end COPY/PASTE implementation ====
-
+> ====== end COPY/PASTE implementation ====
 
 ##  select()
 
@@ -576,10 +551,9 @@ that's why we need to check the layout
 
 ##  remove()
 
-DEPRECATED FUNCTIONS !!
-This is left for fallback support our previous elements
-DO NOT use these in new codes
-
+> DEPRECATED FUNCTIONS !!
+> This is left for fallback support our previous elements
+> DO NOT use these in new codes
 
 ##  _duplicate()
 
