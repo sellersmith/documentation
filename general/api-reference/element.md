@@ -25,7 +25,7 @@
 | editable | `bool` | `false` |  |
 | dynamic | `bool` | `false` |  |
 | useLayout | `number` | `false` |  |
-| dynamicItem | `number` | `false` |  |``
+| dynamicItem | `number` | `false` |  |
 | hidden | `bool` | `false` |  |
 | url | `string` | `false` |  |
 | hideOnLarge | `bool` | `false` |  |
@@ -87,7 +87,7 @@
 ## updateComputedStyle (  ) 
 
 
-## set ( path | value ) 
+## set ( path , value ) 
 
 get /set methods provide a simple interface for
 exchanging data with other libraries. Our UI Controls
@@ -293,7 +293,7 @@ Take only the properties defined in static getProptypes
 | props | `undefined` |  |
 
 
-## getStyleSelector ( psuedo | state | psuedoState ) 
+## getStyleSelector ( psuedo , state , psuedoState ) 
 
 | Param | Type | Description |
 | --- | --- | --- |
@@ -302,7 +302,7 @@ Take only the properties defined in static getProptypes
 | psuedoState | `null` |  |
 
 
-## customHash ( pageKey | elKey | elType ) 
+## customHash ( pageKey , elKey , elType ) 
 
 custom hash used for preset
 
@@ -367,7 +367,7 @@ Check if this element is child of given element
 ## copy (  ) 
 
 
-## setStyle ( nextStyle | psuedo ) 
+## setStyle ( nextStyle , psuedo ) 
 
 | Param | Type | Description |
 | --- | --- | --- |
@@ -382,7 +382,7 @@ Check if this element is child of given element
 | psuedo | `null` |  |
 
 
-## saveState ( state | cb ) 
+## saveState ( state , cb ) 
 
 | Param | Type | Description |
 | --- | --- | --- |
@@ -404,7 +404,7 @@ so the order is certainly unchanged => The styles will be applied respectively w
 that's why we need to check the layout
 
 
-## constructLayout ( layout | el ) 
+## constructLayout ( layout , el ) 
 
 | Param | Type | Description |
 | --- | --- | --- |
@@ -415,7 +415,7 @@ that's why we need to check the layout
 ## getAllStyles (  ) 
 
 
-## constructStyles ( styles | el ) 
+## constructStyles ( styles , el ) 
 
 | Param | Type | Description |
 | --- | --- | --- |
@@ -432,7 +432,7 @@ that's why we need to check the layout
 ## pasteStyles (  ) 
 
 
-## applyClipboardStyle ( styles | el ) 
+## applyClipboardStyle ( styles , el ) 
 
 | Param | Type | Description |
 | --- | --- | --- |
@@ -448,7 +448,7 @@ that's why we need to check the layout
 ## select (  ) 
 
 
-## triggerAction ( action | ...args ) 
+## triggerAction ( action , ...args ) 
 
 | Param | Type | Description |
 | --- | --- | --- |
@@ -547,7 +547,7 @@ that's why we need to check the layout
 | e | `null` |  |
 
 
-## enhanceTemplateJSON ( templateJSON | parentType | isMoved ) 
+## enhanceTemplateJSON ( templateJSON , parentType , isMoved ) 
 
 | Param | Type | Description |
 | --- | --- | --- |
@@ -556,7 +556,7 @@ that's why we need to check the layout
 | isMoved | `null` |  |
 
 
-## showPlaceHolder ( edge | bounds ) 
+## showPlaceHolder ( edge , bounds ) 
 
 | Param | Type | Description |
 | --- | --- | --- |
