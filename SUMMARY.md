@@ -6,6 +6,7 @@
 
 * [PageFly Ecosystem](general/pagefly-app-ecosystem.md)
 * [Dev Environment](general/environment-and-requirement.md)
+* [Tools used in PageFly](general/tools-used-in-pagefly.md)
 * [API Reference](general/api-reference/README.md)
   * [Element](general/api-reference/element.md)
 
