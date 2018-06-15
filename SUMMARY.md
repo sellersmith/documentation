@@ -15,8 +15,8 @@
 * [Pagefly Elements](app-core/pagefly-elements.md)
 * [Getting Started](app-core/getting-started.md)
 * [Components usage guidelines](app-core/components-usage-guidelines/README.md)
-  * [Designing views using UI Layouts](app-core/components-usage-guidelines/designing-views-using-ui-layouts.md)
   * [UI Components References](app-core/components-usage-guidelines/ui-components-references.md)
+  * [Designing views using UI Layouts](app-core/components-usage-guidelines/designing-views-using-ui-layouts.md)
 
 ## PageFly
 
