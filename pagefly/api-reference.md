@@ -85,7 +85,7 @@ Element type
 Element HTML
 {% endapi-method-parameter %}
 
-{% api-method-parameter name="" type="string" required=true %}
+{% api-method-parameter name="data" type="string" required=true %}
 Element JSON data
 {% endapi-method-parameter %}
 {% endapi-method-form-data-parameters %}
