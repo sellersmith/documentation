@@ -137,5 +137,65 @@ Element ID
 {% endapi-method-spec %}
 {% endapi-method %}
 
+{% api-method method="post" host="https://apps.pagefly.io" path="/index.php?task=elements&id=${shop\_id}&type=SAVE" %}
+{% api-method-summary %}
+Update Element
+{% endapi-method-summary %}
+
+{% api-method-description %}
+Update Element
+{% endapi-method-description %}
+
+{% api-method-spec %}
+{% api-method-request %}
+{% api-method-query-parameters %}
+{% api-method-parameter name="type" type="string" required=true %}
+
+{% endapi-method-parameter %}
+
+{% api-method-parameter name="task" type="string" required=true %}
+
+{% endapi-method-parameter %}
+
+{% api-method-parameter name="id" type="number" required=true %}
+
+{% endapi-method-parameter %}
+{% endapi-method-query-parameters %}
+
+{% api-method-form-data-parameters %}
+{% api-method-parameter name="element\_id" type="string" required=true %}
+
+{% endapi-method-parameter %}
+
+{% api-method-parameter name="type" type="string" required=false %}
+Element type
+{% endapi-method-parameter %}
+
+{% api-method-parameter name="html" type="string" required=false %}
+Element HTML
+{% endapi-method-parameter %}
+
+{% api-method-parameter name="data" type="string" required=true %}
+Element JSON data
+{% endapi-method-parameter %}
+{% endapi-method-form-data-parameters %}
+{% endapi-method-request %}
+
+{% api-method-response %}
+{% api-method-response-example httpCode=200 %}
+{% api-method-response-example-description %}
+
+{% endapi-method-response-example-description %}
+
+```
+
+```
+{% endapi-method-response-example %}
+{% endapi-method-response %}
+{% endapi-method-spec %}
+{% endapi-method %}
+
 ## Revision API
+
+
 
