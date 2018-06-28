@@ -195,6 +195,48 @@ Element JSON data
 {% endapi-method-spec %}
 {% endapi-method %}
 
+{% api-method method="delete" host="https://media.pagefly.io" path="/file/delete/:id" %}
+{% api-method-summary %}
+Delete Image
+{% endapi-method-summary %}
+
+{% api-method-description %}
+Delete image by the id of image.
+{% endapi-method-description %}
+
+{% api-method-spec %}
+{% api-method-request %}
+{% api-method-path-parameters %}
+{% api-method-parameter name="id" type="string" required=true %}
+Image ID
+{% endapi-method-parameter %}
+{% endapi-method-path-parameters %}
+
+{% api-method-body-parameters %}
+{% api-method-parameter name="password" type="string" required=false %}
+123
+{% endapi-method-parameter %}
+
+{% api-method-parameter name="username" type="string" required=false %}
+minh
+{% endapi-method-parameter %}
+{% endapi-method-body-parameters %}
+{% endapi-method-request %}
+
+{% api-method-response %}
+{% api-method-response-example httpCode=200 %}
+{% api-method-response-example-description %}
+
+{% endapi-method-response-example-description %}
+
+```
+
+```
+{% endapi-method-response-example %}
+{% endapi-method-response %}
+{% endapi-method-spec %}
+{% endapi-method %}
+
 ## Revision API
 
 
