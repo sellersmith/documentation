@@ -26,6 +26,7 @@
 ## JSN PB3
 
 * [App installation](jsn-pb3/app-installation.md)
+* [API Reference](jsn-pb3/api-reference-1.md)
 
 ## ManyThanks
 
